@@ -26,28 +26,30 @@
   top: 0;
   left: 0;
   
-  width: 100%;
  }
 
  .navbarright{
+  display: flex;
    flex-direction: row;
-   justify-items: flex-start;
-   
-   
+   justify-content: flex-start;
+   margin: auto;
+   width: 100% - 330px;
    
  }
 
  .navbarleft{
-   flex-direction: row-reverse;
+  display: flex;
+   flex-direction: row;
    justify-content: flex-start;
-   justify-items: flex-start;
-  
+   margin: auto;
+   
  }
 
 .menu { 
   grid-area: menu;
   position: relative;
   top: 30px;
+  
 }
 
 .posts { 
