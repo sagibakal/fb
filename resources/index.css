@@ -1,26 +1,63 @@
-.navbar{
-display: flex;
-justify-content: space-between;
-background-color: #4267b2;
-border-bottom: 1px solid #29487d;
-color: #fff;
-width: 100%;
-position: fixed;
-top: 0;
-left: 0;
-box-sizing: border-box;
-height: 43px;
+
+
+.logo{
+  color: white;
+  margin: 5px;
+  font-size: 25px;
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
+  grid-template-areas: "navbar navbar navbar navbar" "menu posts posts info" "menu posts posts info";
+}
 
-
-.logoSearch {
-  float: left;
+.navbar { 
+  grid-area: navbar;  
   display: flex;
-  margin: 10px;
-  border: none;
+  align-items: center;
+  background-color: #4267b2;
+  border-bottom: 1px solid #29487d;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   
+  width: 100%;
+ }
+
+ .navbarright{
+   flex-direction: row;
+   justify-items: flex-start;
+   
+   
+   
+ }
+
+ .navbarleft{
+   flex-direction: row-reverse;
+   justify-content: flex-start;
+   justify-items: flex-start;
+  
+ }
+
+.menu { 
+  grid-area: menu;
+  position: relative;
+  top: 30px;
 }
 
+.posts { 
+  grid-area: posts;
+  position: relative;
+  top: 30px;
+}
 
+.info { 
+  grid-area: info;
+  position: relative;
+  top: 30px;
+ }
