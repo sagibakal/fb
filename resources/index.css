@@ -4,8 +4,49 @@
   color: white;
   margin: 5px;
   font-size: 25px;
+  
 }
 
+.searchbar{
+  width: 300px;
+}
+
+.navbarrightcontentt{
+  color: white;
+  margin: 5px;
+  font-size: 18px;
+  
+}
+.navbarrightcontentt::before {
+  content: '';
+  display: block;
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 12px;
+  width: 2px;
+  background: rgba(0, 0, 0, .1);
+}
+
+
+.navbarrightcontentb{
+  color: black;
+  margin: 5px;
+  font-size: 18px;
+  
+}
+
+
+.navbarrightcontentb::before {
+  content: '';
+  display: block;
+  height: 18px;
+  left: -1px;
+  position: absolute;
+  top: 12px;
+  width: 2px;
+  background: rgba(0, 0, 0, .1);
+}
 
 .grid-container {
   display: grid;
@@ -25,15 +66,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  
+  flex-wrap: nowrap;
  }
 
  .navbarright{
   display: flex;
    flex-direction: row;
    justify-content: flex-start;
+   align-items: center;
    margin: auto;
-   width: 100% - 330px;
+   flex-wrap: nowrap;
+   color: #fff;
    
  }
 
@@ -42,6 +85,9 @@
    flex-direction: row;
    justify-content: flex-start;
    margin: auto;
+   flex-wrap: nowrap;
+   align-items: center;
+   color: #fff;
    
  }
 
@@ -49,7 +95,6 @@
   grid-area: menu;
   position: relative;
   top: 30px;
-  
 }
 
 .posts { 
@@ -63,3 +108,4 @@
   position: relative;
   top: 30px;
  }
+
