@@ -1,5 +1,11 @@
 
+ body{
+  background-color: #e9ebee;
+ }
 
+ div{
+   display: block;
+ }
 .logo{
   color: white;
   margin: 5px;
@@ -7,52 +13,62 @@
   
 }
 
+.spanline{
+    display: inline-block;
+    color: #355088;
+    font-size: 1.2rem;
+}
 .searchbar{
-  width: 300px;
+  width: 370px;
+  
 }
 
 .navbarrightcontentt{
   color: white;
   margin: 5px;
-  font-size: 18px;
-  
-}
-.navbarrightcontentt::before {
-  content: '';
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: space-between;
+  text-decoration: none;
   display: block;
-  height: 18px;
-  left: -1px;
-  position: absolute;
-  top: 12px;
-  width: 2px;
-  background: rgba(0, 0, 0, .1);
 }
+
+.navbarrightcontentt:hover{
+  display: block;
+  background-color: rgba(0, 0, 0, 0.164);
+  border-radius: 20%;
+  }
+
 
 
 .navbarrightcontentb{
   color: black;
   margin: 5px;
   font-size: 18px;
-  
+  justify-content: space-between;
+  opacity: 0.7;
 }
 
-
-.navbarrightcontentb::before {
-  content: '';
+.navbarrightcontentb:hover{
   display: block;
-  height: 18px;
-  left: -1px;
-  position: absolute;
-  top: 12px;
-  width: 2px;
-  background: rgba(0, 0, 0, .1);
-}
+  opacity: 1;
+  }
+
+  .navbarrightcontentb:active{
+    display: block;
+    opacity: 1;
+    color: white;
+    }
+
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1.8fr 1fr;
   grid-template-areas: "navbar navbar navbar navbar" "menu posts posts info" "menu posts posts info";
+  height: 100%;
+  width: 100%;
+
 }
 
 .navbar { 
@@ -63,10 +79,12 @@
   border-bottom: 1px solid #29487d;
   color: #fff;
   width: 100%;
+  height: 40px;
   position: fixed;
   top: 0;
   left: 0;
   flex-wrap: nowrap;
+  justify-content: space-between;
  }
 
  .navbarright{
@@ -77,7 +95,7 @@
    margin: auto;
    flex-wrap: nowrap;
    color: #fff;
-   
+   justify-content: space-between;
  }
 
  .navbarleft{
@@ -88,24 +106,47 @@
    flex-wrap: nowrap;
    align-items: center;
    color: #fff;
+   justify-content: space-between;
    
  }
 
 .menu { 
   grid-area: menu;
-  position: relative;
-  top: 30px;
+  position: fixed;
+  margin: 50px;
+  
 }
 
 .posts { 
   grid-area: posts;
   position: relative;
-  top: 30px;
+  margin: 50px;
 }
 
 .info { 
   grid-area: info;
   position: relative;
-  top: 30px;
+  margin: 50px;
  }
 
+
+ .create-post{
+   background-color: white;
+   border: black;
+   border-radius: 10px;
+
+ }
+
+ .fa-newspaper {
+  color: #2c5dc9;
+  
+ }
+ .fa-facebook-messenger2 {
+  color: #2c5dc9;
+ }
+ .fa-youtube {
+  color: #2c5dc9;
+ }
+ .fa-warehouse {
+  color: green;
+ }
